@@ -32,6 +32,7 @@
 export default {
   methods: {
     goto(path){
+      console.log(this.$route.path,path)
       if(this.$route.path !== path){
         this.$router.replace(path)
       }
